@@ -1,0 +1,116 @@
+@import '../colors/colors';
+@import '../resonsiveness/responsive';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@800&display=swap');
+
+
+// *, *::before, *::after{
+//     box-sizing: inherit;
+// }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+body{
+    // z-index: -1;
+    .navigation{
+        background-color: rgba(61,190,255,255);
+        // background-color: yellowgreen;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        z-index: 1;
+        width: 90%;
+        margin: auto;
+        .logo{
+            z-index: 1;
+            flex: 1;
+            margin-top: 15px;
+            img{
+                z-index: 1;
+            }
+        }
+            .links{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                // background-color: chocolate;
+                // width: 27%;
+                z-index: 1;
+                // margin-right: -100px;
+                .ul{
+                    display: flex;
+                    justify-content: space-around;
+                    // width: 50%;
+                    // background-color: black;
+                        li{
+                            list-style-type: none;
+                            font-family: 'Barlow', sans-serif;
+                            margin-left: 40px;
+                                a{
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                        }
+                }
+                .headerButton{
+                    background-color: white;
+                    padding: 15px 30px;
+                    font-family: 'Fraunces', sans-serif;
+                    border-radius: 100px;
+                    border: none;
+                    color: black;
+                        &:hover{
+                            background-color: rgba(110,207,255,255);
+                            transition-duration: 0.5s;
+                            color: white;
+                        }
+                        &:not(:hover){
+                            transition-duration: 0.5s;
+                        }
+                }
+            }
+           
+    }
+
+    .section{
+        h1{
+            color: white;
+            font-size: 80px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            letter-spacing: 5px;
+            font-family: 'Fraunces', sans-serif;
+            top: 25%;
+        }
+        #headerimg{
+            img{
+                width: 100%;
+                z-index: 0;
+                margin-top: -30vh;
+            }
+        }
+        #mobheaderimg{
+            display: none;
+        }
+    }
+}
+
+.burger{
+    display: none;
+    div{
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+    }
+}
+  
+
+

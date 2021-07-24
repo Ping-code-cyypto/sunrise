@@ -1,0 +1,20 @@
+@import 'globals';
+@import '../resonsiveness/responsive';
+
+.dropdown{
+    transform: translateY(30%);
+    opacity: 1;
+}
+
+.rotateposi{
+    transform: rotateZ(45deg);
+    // background-color: blue;
+}
+.rotatenegi{
+    transform: rotateZ(-45deg);
+
+}
+.displaynone{
+    display: none;
+    transition-duration: 0.3s;
+}

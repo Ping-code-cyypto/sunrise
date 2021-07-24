@@ -1,0 +1,59 @@
+@import '../colors/colors';
+
+@media screen and (max-width: 700px){
+    
+   
+    .burger{
+        display: block;
+        z-index: 1;
+    }
+    .links{
+        position: absolute;
+        background-color: whitesmoke;
+        flex-direction: column;
+        top: 0;
+        width: 80%;
+        transform: translateY(-100%);
+        transition-duration: 0.6s;
+        opacity: 0;
+        padding: 30px 0;
+        // margin-top: 30%;
+            .ul{
+                flex-direction: column;
+                text-align: center;
+                    .lin{
+                        margin: 20px 0 20px 0;
+                            .lin1{
+                                color: $Verydarkgrayishblue;
+                                margin-left: -40px;
+                            }
+                            .lin2{
+                                color: $Verydarkgrayishblue;
+                                margin-left: -40px;
+                            }
+                            .lin3{
+                                color: $Verydarkgrayishblue;
+                                margin-left: 10px;
+                            }
+                    }
+            }
+           
+    #button{
+        background-color: yellow;
+    }
+    }
+
+//    section{
+    //    #headerimg{
+    //     //    display: none;
+    //    }
+    //    #mobheaderimg{
+    //         display: block;
+    //         position: absolute;
+    //    }
+//    }
+//    section #mobheaderimg{
+//        display: block;
+//        position: absolute;
+//    }
+}
